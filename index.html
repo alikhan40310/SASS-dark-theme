@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sass work</title>
+	<title>SASS dark theme</title>
 	<!-- CSS File attachment -->
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
@@ -18,16 +18,14 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<h1>Its a Heading</h1>
-			<button>hello button</button>
-		</header>
-		<div class="contact">
-			<button>submit button</button>
-			<div class="info">
-				<h2>our contact info</h2>
-				<p>this is our info</p>
+		<div id="app" 
+		:class='darkTheme ? "darkTheme" : "lightTheme"'>
+			<div class='content'>
+			Hello, Dark theme World!
 			</div>
+			<button @click='toggleTheme'>
+			Toggle Theme
+			</button>
 		</div>
 	</div>
 
