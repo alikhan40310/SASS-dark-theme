@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en" data-theme="light"> 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SASS dark theme</title>
 	<!-- CSS File attachment -->
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="style/responsive.css">
 	<link rel="stylesheet" type="text/css" href="style/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/all.css">
@@ -18,14 +18,13 @@
 </head>
 <body>
 	<div class="container">
-		<div id="app" 
-		:class='darkTheme ? "darkTheme" : "lightTheme"'>
-			<div class='content'>
-			Hello, Dark theme World!
+		<div class="content">
+			<h1>light / dark mode</h1>
+			<div class="toggle_container">
+				<input type="checkbox" id="switch" name="theme">
+				<label for="switch">Toggle</label>
 			</div>
-			<button @click='toggleTheme'>
-			Toggle Theme
-			</button>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi obcaecati, quasi quod accusamus beatae animi quo delectus, nesciunt ut ad debitis, officiis deleniti possimus placeat fugit tempora nulla ipsum nisi.</p>
 		</div>
 	</div>
 
@@ -34,7 +33,7 @@
 
 	<!-- jquery attachment -->
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
 	<script type="text/javascript" src="js/fontawesome.min.js"></script>
 	<script type="text/javascript" src="js/all.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>

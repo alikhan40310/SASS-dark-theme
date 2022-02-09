@@ -1,13 +1,18 @@
-new Vue({
-  el: "#app",
-  data: function() {
-  	return {
-    	darkTheme: false
+let checkbox = document.querySelector('input[name=theme]');
+checkbox.addEventListener('change', function(){
+    if(this.checked){
+        trans();
+        document.documentElement.setAttribute('data-theme', 'dark');
+        
     }
-  },
-  methods: {
-  	toggleTheme: function() {
-    	this.darkTheme = !this.darkTheme;
+    else {
+        trans();
+        document.documentElement.setAttribute('data-theme', 'light');
     }
-  }
 })
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+       document.documentElement.classList.remove('transition'); 
+    }, 3000);
+}
