@@ -1,0 +1,76 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2bc7c7;
+}
+
+header button {
+  background-color: #e02c71;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header button:hover {
+  background-color: #284db3;
+  color: #fff;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #284db3;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.contact button {
+  background-color: #e02c71;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact button:hover {
+  background-color: #2bc7c7;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
